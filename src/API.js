@@ -6,7 +6,7 @@ class API extends Component {
     return (
 
       <Fetch
-        loader="Ca Charge" // Replace this with your lovely handcrafted loader
+        loader="Chargement en cours ..." // Replace this with your lovely handcrafted loader
         url="https://api.nasa.gov/planetary/apod?api_key=PLZ1xw46oTADUkLZGmTozRC8wxUqjz8ajGn2q1cm"
         timeout={5000}>
         {({ data }) => (

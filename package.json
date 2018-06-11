@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "react": "^16.4.0",
+    "react-animated-css": "^1.0.4",
     "react-data-fetching": "^0.2.2",
     "react-dom": "^16.4.0",
     "react-router-dom": "^4.2.2",

@@ -8,7 +8,8 @@ import Home from "./Home";
 import Stuff from "./Stuff";
 import Contact from "./Contact";
 import css from "./index.css";
-import API from "./API"
+import Dog from "./Dog";
+
 
 class Main extends Component {
   render() {
@@ -20,14 +21,14 @@ class Main extends Component {
           <li><NavLink aria-current="true"  exact to="/">Home</NavLink></li>
           <li><NavLink aria-current="true"  to="/stuff">Stuff</NavLink></li>
           <li><NavLink aria-current="true"  to="/contact">Contact</NavLink></li>
-          <li><NavLink aria-current="true"  to="/API">API</NavLink></li>
+          <li><NavLink aria-current="true"  to="/dog">Dog</NavLink></li>
 
           </ul>
           <div className="content">
             <Route exact path="/" component={Home}/>
             <Route path="/stuff" component={Stuff}/>
             <Route path="/contact" component={Contact}/>
-            <Route path="/API" component={API}/>
+            <Route path="/dog" component={Dog}/>
           </div>
         </div>
       </HashRouter>
