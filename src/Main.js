@@ -9,6 +9,7 @@ import Stuff from "./Stuff";
 import Contact from "./Contact";
 import css from "./index.css";
 import Dog from "./Dog";
+import {Animated} from "react-animated-css";
 
 
 class Main extends Component {
@@ -16,20 +17,23 @@ class Main extends Component {
     return (
       <HashRouter>
         <div>
+        <Animated animationIn="rotateInDownRight" animationOut="fadeOut" isVisible={true}>
           <h1>Simple SPA</h1>
           <ul className="header">
           <li><NavLink aria-current="true"  exact to="/">Home</NavLink></li>
           <li><NavLink aria-current="true"  to="/stuff">Stuff</NavLink></li>
           <li><NavLink aria-current="true"  to="/contact">Contact</NavLink></li>
           <li><NavLink aria-current="true"  to="/dog">Dog</NavLink></li>
-
           </ul>
+          
           <div className="content">
             <Route exact path="/" component={Home}/>
             <Route path="/stuff" component={Stuff}/>
             <Route path="/contact" component={Contact}/>
             <Route path="/dog" component={Dog}/>
           </div>
+         
+          </Animated>
         </div>
       </HashRouter>
     );
